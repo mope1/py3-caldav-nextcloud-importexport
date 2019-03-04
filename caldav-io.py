@@ -41,10 +41,17 @@ elif args.operation=='import':
     for filename in os.listdir(folder):
       with open(os.path.join(folder,filename), 'r') as f:
         text=f.read()
-        print(calendar.add_todo(text))
+        try:
+          print(calendar.add_todo(text))
+        except caldav.lib.error.PutError as e:
+          print(e)
+
     folder = os.path.join('export',calendar.name,'events')
     for filename in os.listdir(folder):
       with open(os.path.join(folder,filename), 'r') as f:
         text=f.read()
-        print(calendar.add_event(text))
+        try:
+          print(calendar.add_event(text))
+        except caldav.lib.error.PutError as e:
+          print(e)
     

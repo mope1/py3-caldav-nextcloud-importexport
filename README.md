@@ -7,4 +7,4 @@ Examples:
 - `caldav.py example.com username passw0rd import`  
   Reads the `export` folder contents and tries to create events and todos from there. Make sure the calendars exist on the target.
 
-You can use the script for non-nextcloud caldav servers, just edit this line appropriately: `cal_url_suf="/remote.php/dav/calendars/"`
+You can use the script for non-nextcloud caldav servers, just edit the``cal_url_suf` variable in the script.

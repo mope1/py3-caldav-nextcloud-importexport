@@ -1,5 +1,5 @@
 # py3-caldav-nextcloud-importexport
-Minimal script to export and import caldav ics files using the caldav pypi package. Preconfigured for Nextcloud.
+Minimal script to export and import caldav ics files using the caldav pypi package. Preconfigured for Nextcloud. **I think it has some minor bugs, don't trust it blindly!**
 
 Examples:  
 - `caldav.py example.com username passw0rd export`  
